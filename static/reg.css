@@ -1,0 +1,527 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+.body{
+  background: linear-gradient(to right, #B0C8F9, #E594FE);
+      font-family: "Russo One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      width: 100%;
+}
+.header{
+  display: flex;
+}
+.logo{
+  margin-left: 9px;
+  margin-top: 18px;
+}
+.name{
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffff;
+  font-size: 110px;
+  margin-left: 52px;
+  margin-top: 80px;
+}
+.square{
+  /* Rectangle 42 */
+
+position: absolute;
+width: 917px;
+height: 70px;
+left: 14px;
+top: 270px;
+
+background: #F3F3F3;
+border-radius: 30px;
+
+}
+.viperr{
+  /* регистрация */
+
+position: absolute;
+width: 339px;
+height: 58px;
+left: 323px;
+top: 276px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+color: #7CEA5D;
+
+
+}
+.square1{
+  /* Rectangle 32 */
+
+position: absolute;
+width: 947px;
+height: 1351px;
+left: 352px;
+top: 662px;
+
+background: linear-gradient(187.05deg, #FFFFFF 53.71%, #FFFFFF 94.5%);
+border-radius: 100px;
+
+}
+.Vector{
+  /* Group 166 */
+
+position: absolute;
+width: 159px;
+height: 149.03px;
+left: 458px;
+top: 695px;
+
+
+}
+.viperr1{
+  /* MemeLytics */
+
+position: absolute;
+width: 485px;
+height: 110px;
+left: 629px;
+top: 734px;
+
+font-family: 'Jersey 15';
+font-style: normal;
+font-weight: 400;
+font-size: 110px;
+line-height: 110px;
+/* identical to box height */
+
+color: #7CEA5D;
+
+
+}
+.viperr2{
+  /* регистрация */
+
+position: absolute;
+width: 419px;
+height: 77px;
+left: 622px;
+top: 879px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 77px;
+
+color: #7CEA5D;;
+
+
+}
+.square3{
+  /* Rectangle 36 */
+
+position: absolute;
+width: 841px;
+height: 126px;
+left: 405px;
+top: 971px;
+
+background: rgba(217, 217, 217, 0.54);
+border-radius: 20px;
+
+}
+.square4{
+  /* Rectangle 37 */
+
+position: absolute;
+width: 841px;
+height: 126px;
+left: 405px;
+top: 1136px;
+
+background: rgba(217, 217, 217, 0.54);
+border-radius: 20px;
+
+}
+.square5{
+  /* Rectangle 41 */
+
+position: absolute;
+width: 841px;
+height: 126px;
+left: 405px;
+top: 1309px;
+
+background: rgba(217, 217, 217, 0.54);
+border-radius: 20px;
+
+}
+.square6{
+  /* Rectangle 42 */
+
+position: absolute;
+width: 841px;
+height: 126px;
+left: 405px;
+top: 1488px;
+
+background: rgba(217, 217, 217, 0.54);
+border-radius: 20px;
+
+}
+.square7{
+  /* Rectangle 38 */
+
+position: absolute;
+width: 404px;
+height: 126px;
+left: 634px;
+top: 1649px;
+border: none;
+background: rgba(229, 148, 254, 0.74);
+border-radius: 20px;
+cursor: pointer;
+}
+.viperr3{
+  /* электронная почта */
+
+position: absolute;
+width: 258px;
+height: 29px;
+left: 435px;
+top: 994px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+white-space: nowrap;
+}
+.input-f{
+  position: absolute;
+    left:  435px;
+margin-top: 780px;
+width: 600px;
+height: 40px;
+background: #FFFFFF;
+border-radius: 10px;
+border: none;
+}
+.viperr4{
+  /* код подтверждения */
+
+position: absolute;
+width: 273px;
+height: 29px;
+left: 435px;
+top: 1158px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+white-space: nowrap;
+}
+.num{
+  position: absolute;
+  left:  435px;
+margin-top: 950px;
+width: 600px;
+height: 40px;
+background: #FFFFFF;
+border-radius: 10px;
+border: none;
+}
+.viperr5{
+  /* пароль */
+
+position: absolute;
+width: 96px;
+height: 29px;
+left: 435px;
+top: 1339px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.05em;
+}
+.input-field{
+  position: absolute;
+  left:  435px;
+margin-top: 1120px;
+width: 600px;
+height: 40px;
+background: #FFFFFF;
+border-radius: 10px;
+border: none;
+}
+.viperr6{
+  /* пожалуйста, введите код ещё раз */
+
+position: absolute;
+width: 461px;
+height: 29px;
+left: 435px;
+top: 1510px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.05em;
+white-space: nowrap;
+}
+.nump{
+  position: absolute;
+  left:  435px;
+margin-top: 1301px;
+width: 600px;
+height: 40px;
+background: #FFFFFF;
+border-radius: 10px;
+border: none;
+}
+.viperr7{
+  /* регистрация */
+
+position: absolute;
+width: 226px;
+height: 39px;
+left: 723px;
+top: 1692px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+letter-spacing: 0.05em;
+pointer-events: none;
+color: #000000;
+
+
+}
+.viperr8{
+  /* другие способы входа */
+
+position: absolute;
+width: 254px;
+height: 24px;
+left: 709px;
+top: 1840px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+color: #D9D9D9;
+
+white-space: nowrap;
+}
+.line{
+  /* Line 1 */
+
+position: absolute;
+width: 282px;
+height: 0px;
+left: 395px;
+top: 1852px;
+
+border: 1px solid #D9D9D9;
+
+}
+.line1{
+  /* Line 2 */
+
+position: absolute;
+width: 282px;
+height: 0px;
+left: 973px;
+top: 1852px;
+
+border: 1px solid #D9D9D9;
+
+}
+.line2{
+  /* Line 3 */
+
+position: absolute;
+width: 126px;
+height: 0px;
+left: 1025px;
+top: 1198px;
+
+border: 1px solid rgba(0, 0, 0, 0.69);
+transform: rotate(90deg);
+
+}
+.viperr9{
+  /* отправить */
+
+position: absolute;
+width: 139px;
+height: 29px;
+left: 1100px;
+top: 1184px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.05em;
+cursor: pointer;
+color: #000000;
+
+
+}
+.Vector1{
+  /* system-uicons:cross-circle */
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-top: 770px;
+  margin-left: 1160px;
+  border-radius: 50%;
+  cursor: pointer;
+  }
+  .cross {
+      position: relative;
+      width: 22.86px;
+      height: 22.86px;
+      margin-left: 6px;
+  }
+  
+  .cross::before,
+  .cross::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 22.86px;
+      height: 1px; /* Толщина линии */
+      background-color: black; /* Цвет крестика */
+  }
+  
+  .cross::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .cross::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+.Vector2{
+  /* system-uicons:cross-circle */
+
+position: absolute;
+width: 50px;
+height: 50px;
+margin-left: 1160px;
+top: 1358px;
+border-radius: 50%;
+cursor: pointer;
+}
+.Vector3{
+  /* devicon:google */
+
+position: absolute;
+width: 49px;
+height: 49px;
+left: 580px;
+top: 1910px;
+
+
+}
+.Vector4{
+  /* ic:baseline-apple */
+
+position: absolute;
+width: 71px;
+height: 71px;
+left: 733px;
+top: 1894px;
+
+
+}
+.Vector5{
+  /* ic:baseline-facebook */
+
+position: absolute;
+width: 65px;
+height: 65px;
+left: 894px;
+top: 1900px;
+
+
+}
+.Vector6{
+  /* devicon:twitter */
+
+position: absolute;
+width: 38px;
+height: 38px;
+left: 1076px;
+top: 1911px;
+}
+::-webkit-scrollbar {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+}
+
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f2bf93;
+  background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
+                    transparent 25%,
+                    transparent 50%,
+                    rgba(255, 255, 255, .25) 50%,
+                    rgba(255, 255, 255, .25) 75%,
+                    transparent 75%,
+                    transparent);
+}

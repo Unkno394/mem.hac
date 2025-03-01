@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeLytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/analiz.css">
+</head>
+<body class="body">
+    <header class="header">
+        <img class="logo" src="/static/Group 2.svg" alt="Логотип">
+        <h1 class="name" >MemeLytics</h1>
+        <a href="/вход">
+            <button
+            class="button">Вход</button>
+        </a>        
+    </header>
+    <main>
+        <div class="square"></div>
+        <H2 class="viperr">Анализ мемов</H2>
+        <div class="square2"></div>
+        <H2 class="viperr2">Как это работает</H2>
+        <div class="square3"></div>
+        <H2 class="viperr3">Загрузи мем</H2>
+        <div class="square4"></div>
+        <H2 class="viperr4">Результат</H2>
+        <div class="square5"></div>
+        <H2 class="viperr5">Анализируй </H2>
+        <div class="square6"></div>
+          <input id="textInput" type="text" placeholder="Загрузите мем" class="viperr6">
+          <form action="/analyse" method="POST" enctype="multipart/form-data">
+            <input class="Vector" type="file" name="image" accept="image/*" required>
+            <button class="Vector2" type="submit">Загрузить и проанализировать</button>
+        </form>
+        
+        
+
+        {% if label %}
+    <h2>Результат анализа:</h2>
+    <p>Метка: {{ label }}</p>
+    <p>Уверенность: {{ confidence }}%</p>
+    <img src="{{ image_url }}" alt="Загруженное изображение">
+{% endif %}
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

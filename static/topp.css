@@ -1,0 +1,489 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+.body{
+    background: linear-gradient(to right, #B0C8F9, #E594FE);
+        font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+}
+.header{
+    display: flex;
+}
+.logo{
+    margin-left: 9px;
+    margin-top: 18px;
+}
+.name{
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    font-size: 110px;
+    margin-left: 52px;
+    margin-top: 80px;
+}
+.button{
+    margin-left: 377px;
+    margin-top: 110px;
+    width: 222px;
+    height: 67px;
+    background-color: #7CEA5D;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 36px;
+    color: #ffff;
+    font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        cursor:pointer;
+}
+.top10{
+    /* Топ-10 самых популярных мемов */
+
+position: absolute;
+width: 589px;
+height: 99px;
+left: 194px;
+top: 395px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #7CEA5D;
+}
+.square{
+    /* Rectangle 13 */
+
+position: absolute;
+width: 917px;
+height: 70px;
+left: -17px;
+top: 375px;
+
+background: #F3F3F3;
+border-radius: 30px;
+}
+.text1{/* Выбрать всего 10 главных мемов десятилетия — задача непростая. Критерии отбора: узнаваемость, влияние, вклад в мемологию. С 2010 года мемы мало изменились, но стали «жить» меньше. Если раньше их было немного, и они казались элитарными (интернет был не так развит), то теперь мемов масса, но большинство «умирает» очень быстро. Мемы превратились в индустрию: их производят десятками в день, надеясь на успех. СМИ пишут о мемах, чтобы привлечь внимание, но по-настоящему популярными мемы становятся случайно. */
+
+    position: absolute;
+    width: 1272px;
+    height: 296px;
+    left: 44px;
+    top: 476px;
+    
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    
+    color: #FFFFFF;
+    
+    }
+    .text2{/* Итак, главные мемы десятилетия — в подборке только самые очевидные мемы : */
+
+        width: 1272px;
+height: 72px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+position: absolute;
+margin-top: 550px;
+margin-left: 44px;
+white-space: nowrap;
+}
+.squaretop1{/* Rectangle 22 */
+
+    position: absolute;
+    width: 1015px;
+    height: 909px;
+    left: 260px;
+    top: 985px;
+    
+    background: linear-gradient(180.05deg, #F3F3F3 0.04%, rgba(255, 255, 255, 0) 82.75%);
+    filter: drop-shadow(20px 174px 70.5px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+    }
+    .first{/* 1 место */
+
+        position: absolute;
+        width: 164px;
+        height: 48px;
+        left: 670px;
+        top: 1005px;
+        
+        font-family: 'Russo One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0.05em;
+        
+        color: #7CEA5D;
+        white-space: nowrap;
+        }
+        .squaretop2{/* Rectangle 23 */
+
+            position: absolute;
+            width: 1015px;
+            height: 909px;
+            left: 260px;
+            top: 2204px;
+            
+            background: linear-gradient(180.05deg, #F3F3F3 0.04%, rgba(255, 255, 255, 0) 82.75%);
+            filter: drop-shadow(20px 174px 70.5px rgba(0, 0, 0, 0.25));
+            border-radius: 30px;
+            }
+            .second{/* 2 место */
+
+                position: absolute;
+                width: 171px;
+                height: 48px;
+                left: 670px;
+                top: 2224px;
+                
+                font-family: 'Russo One';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: 0.05em;
+                
+                color: #7CEA5D;
+                white-space: nowrap;
+               
+                }
+                .squaretop3{/* Rectangle 24 */
+
+                    position: absolute;
+                    width: 1015px;
+                    height: 909px;
+                    left: 260px;
+                    top: 3412px;
+                    
+                    background: linear-gradient(180.05deg, #F3F3F3 0.04%, rgba(255, 255, 255, 0) 82.75%);
+                    filter: drop-shadow(20px 174px 70.5px rgba(0, 0, 0, 0.25));
+                    border-radius: 30px;
+                    }
+                    .third{/* 3 место */
+
+                        position: absolute;
+                        width: 172px;
+                        height: 48px;
+                        left: 670px;
+                        top: 3444px;
+                        
+                        font-family: 'Russo One';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 48px;
+                        letter-spacing: 0.05em;
+                        
+                        color: #7CEA5D;
+                        white-space: nowrap;
+                        }
+                        .squaretop4{/* Rectangle 25 */
+
+                            position: absolute;
+                            width: 1015px;
+                            height: 909px;
+                            left: 260px;
+                            top: 4631px;
+                            
+                            background: linear-gradient(180.05deg, #F3F3F3 0.04%, rgba(255, 255, 255, 0) 82.75%);
+                            filter: drop-shadow(20px 174px 70.5px rgba(0, 0, 0, 0.25));
+                            border-radius: 30px;
+                            }
+                            .four{/* 4 место */
+
+                                position: absolute;
+                                width: 174px;
+                                height: 48px;
+                                left: 670px;
+                                top: 4644px;
+                                
+                                font-family: 'Russo One';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 40px;
+                                line-height: 48px;
+                                letter-spacing: 0.05em;
+                                
+                                color: #7CEA5D;
+                                white-space: nowrap;
+                                }
+                               .squaretop5{/* Rectangle 26 */
+
+                                position: absolute;
+                                width: 1015px;
+                                height: 909px;
+                                background: linear-gradient(180.05deg, #F3F3F3 0.04%, rgba(255, 255, 255, 0) 82.75%);
+                                filter: drop-shadow(20px 174px 70.5px rgba(0, 0, 0, 0.25));
+                                border-radius: 30px;
+                                left: 260px;
+                                margin-top: 5856px;
+                                }
+                                .five{
+                                    position: absolute;
+                                    width: 174px;
+                                    height: 48px;
+                                    left: 670px;
+                                    top: 6150px;
+                                    
+                                    font-family: 'Russo One';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 40px;
+                                    line-height: 48px;
+                                    letter-spacing: 0.05em;
+                                    color: #7CEA5D;
+                                white-space: nowrap;
+                                    }
+                                    .squaretop6{/* Rectangle 28 */
+
+                                        position: absolute;
+                                        width: 1015px;
+                                        height: 909px;
+                                        
+                                        background: linear-gradient(180.05deg, #F3F3F3 0.04%, rgba(255, 255, 255, 0) 82.75%);
+                                        filter: drop-shadow(20px 174px 70.5px rgba(0, 0, 0, 0.25));
+                                        border-radius: 30px;
+                                        left: 260px;
+                                        margin-top: 7200px;
+                                        }
+                                        .six{/* 6 место */
+
+                                            position: absolute;
+                                            width: 173px;
+                                            height: 48px;
+                                            left: 670px;
+                                    top: 7500px;
+                                            font-family: 'Russo One';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 40px;
+                                            line-height: 48px;
+                                            letter-spacing: 0.05em;
+                                            
+                                            color: #7CEA5D;
+                                            white-space: nowrap;
+                                            }
+                                            .squaretop7{/* Rectangle 27 */
+
+                                                position: absolute;
+                                                width: 1015px;
+                                                height: 909px;
+                                                
+                                                background: linear-gradient(180.05deg, #F3F3F3 0.04%, rgba(255, 255, 255, 0) 82.75%);
+                                                filter: drop-shadow(20px 174px 70.5px rgba(0, 0, 0, 0.25));
+                                                border-radius: 30px;
+                                                left: 260px;
+                                        margin-top: 8700px;
+                                                }
+                                                .seven{/* 7 место */
+
+                                                    position: absolute;
+                                                    width: 170px;
+                                                    height: 48px;
+                                                    left: 670px;
+                                    top: 9000px;
+                                                    font-family: 'Russo One';
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 40px;
+                                                    line-height: 48px;
+                                                    letter-spacing: 0.05em;
+                                                    
+                                                    color: #7CEA5D;
+                                                    white-space: nowrap;
+                                                    }
+                                                    .squaretop8{/* Rectangle 29 */
+
+                                                        position: absolute;
+                                                        width: 1015px;
+                                                        height: 909px;
+                                                        
+                                                        background: linear-gradient(180.05deg, #F3F3F3 0.04%, rgba(255, 255, 255, 0) 82.75%);
+                                                        filter: drop-shadow(20px 174px 70.5px rgba(0, 0, 0, 0.25));
+                                                        border-radius: 30px;
+                                                        left: 260px; 
+                                        margin-top: 10000px;
+                                                        }
+                                                        .eight{/* 8 место */
+
+                                                            position: absolute;
+                                                            width: 175px;
+                                                            height: 48px;
+                                                            left: 670px;
+                                    top: 10300px;
+                                                            font-family: 'Russo One';
+                                                            font-style: normal;
+                                                            font-weight: 400;
+                                                            font-size: 40px;
+                                                            line-height: 48px;
+                                                            letter-spacing: 0.05em;
+                                                            
+                                                            color: #7CEA5D;
+                                                            white-space: nowrap;
+                                                            }
+                                                            .squaretop9{/* Rectangle 30 */
+
+                                                                position: absolute;
+                                                                width: 1015px;
+                                                                height: 909px;
+                                                                
+                                                                
+                                                                background: linear-gradient(180.05deg, #F3F3F3 0.04%, rgba(255, 255, 255, 0) 82.75%);
+                                                                filter: drop-shadow(20px 174px 70.5px rgba(0, 0, 0, 0.25));
+                                                                border-radius: 30px;
+                                                                left: 260px;
+                                        margin-top: 11400px;
+                                                                }
+                                                                .nine{/* 9 место */
+
+                                                                    position: absolute;
+                                                                    width: 173px;
+                                                                    height: 48px;
+                                                                    left: 670px;
+                                                                    top: 11698px;
+                                                                    
+                                                                    font-family: 'Russo One';
+                                                                    font-style: normal;
+                                                                    font-weight: 400;
+                                                                    font-size: 40px;
+                                                                    line-height: 48px;
+                                                                    letter-spacing: 0.05em;
+                                                                    
+                                                                    color: #7CEA5D;
+                                                                    white-space: nowrap;
+                                                                    }
+                                                                    .squaretop10{/* Rectangle 31 */
+
+                                                                        position: absolute;
+                                                                        width: 1015px;
+                                                                        height: 909px;
+                                                                        left: 260px;
+                                                                        margin-top: 12700px;
+                                                                        
+                                                                        background: linear-gradient(180.05deg, #F3F3F3 0.04%, rgba(255, 255, 255, 0) 82.75%);
+                                                                        filter: drop-shadow(20px 174px 70.5px rgba(0, 0, 0, 0.25));
+                                                                        border-radius: 30px;
+                                                                        }
+                                                                        .ten{/* 10 место */
+
+                                                                            position: absolute;
+                                                                            width: 193px;
+                                                                            height: 48px;
+                                                                            left: 670px;
+                                                                            top: 12986px;
+                                                                            
+                                                                            font-family: 'Russo One';
+                                                                            font-style: normal;
+                                                                            font-weight: 400;
+                                                                            font-size: 40px;
+                                                                            line-height: 48px;
+                                                                            letter-spacing: 0.05em;
+                                                                            
+                                                                            color: #7CEA5D;
+                                                                            white-space: nowrap;
+                                                                            }
+                                                                            ::-webkit-scrollbar {
+                                                                                -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+                                                                                background-color: #f9f9fd;
+                                                                              }
+                                                                            
+                                                                            
+                                                                              ::-webkit-scrollbar-track {
+                                                                                -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+                                                                                background-color: #f9f9fd;
+                                                                              }
+                                                                              
+                                                                              ::-webkit-scrollbar-thumb {
+                                                                                background-color: #f2bf93;
+                                                                                background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
+                                                                                                  transparent 25%,
+                                                                                                  transparent 50%,
+                                                                                                  rgba(255, 255, 255, .25) 50%,
+                                                                                                  rgba(255, 255, 255, .25) 75%,
+                                                                                                  transparent 75%,
+                                                                                                  transparent);
+                                                                              }
+                                                                              .первый{
+                                                                                margin-top: 170px;
+                                                                                width: 100%;
+                                                                                height: 700px;
+                                                                              }
+                                                                              .второй{
+                                                                                margin-top: 170px;
+                                                                                width: 100%;
+                                                                                height: 700px;
+                                                                              }
+                                                                              .третий{
+                                                                                margin-top: 170px;
+                                                                                width: 100%;
+                                                                                height: 700px;
+                                                                              }
+                                                                              .четвертый{
+                                                                                margin-top: 170px;
+                                                                                width: 100%;
+                                                                                height: 700px;
+                                                                              }
+                                                                              .пятый{
+                                                                                margin-top: 170px;
+                                                                                width: 100%;
+                                                                                height: 700px;
+                                                                              }
+                                                                              .шестой{
+                                                                                margin-top: 170px;
+                                                                                width: 100%;
+                                                                                height: 700px;
+                                                                              }
+                                                                              .седьмой{
+                                                                                margin-top: 170px;
+                                                                                width: 100%;
+                                                                                height: 700px;
+                                                                              }
+                                                                              .восьмой{
+                                                                                margin-top: 170px;
+                                                                                width: 100%;
+                                                                                height: 700px;
+                                                                              }
+                                                                              .девятый{
+                                                                                margin-top: 170px;
+                                                                                width: 100%;
+                                                                                height: 700px;
+                                                                              }
+                                                                              .десятый{
+                                                                                margin-top: 170px;
+                                                                                width: 100%;
+                                                                                height: 700px;
+                                                                              }

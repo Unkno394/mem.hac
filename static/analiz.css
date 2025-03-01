@@ -1,0 +1,400 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  body {
+    max-width: 1930px;
+    max-height: 1279px;
+  }
+  ol, ul {
+    list-style: none;
+  }
+.body{
+    background: linear-gradient(to right, #B0C8F9, #E594FE);
+        font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+}
+.header{
+    display: flex;
+}
+.logo{
+    margin-left: 9px;
+    margin-top: 18px;
+}
+.name{
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    font-size: 110px;
+    margin-left: 52px;
+    margin-top: 80px;
+}
+.button{
+    margin-left: 377px;
+    margin-top: 110px;
+    width: 222px;
+    height: 67px;
+    background-color: #7CEA5D;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 36px;
+    color: #ffff;
+    font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        cursor:pointer;
+}
+.square{
+    /* Rectangle 32 */
+
+position: absolute;
+width: 917px;
+height: 70px;
+left: -30px;
+top: 272px;
+
+background: #F3F3F3;
+border-radius: 30px;
+}
+.viperr{
+    /* Анализ мемов */
+
+position: absolute;
+width: 240px;
+height: 36px;
+left: 308px;
+top: 289px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #7CEA5D;
+
+white-space:nowrap;
+}
+.square2{
+    /* Rectangle 30 */
+
+position: absolute;
+width: 424px;
+height: 152px;
+left: 600px;
+top: 400px;
+
+background: #FFFFFF;
+border-radius: 75px;
+}
+.viperr2{
+    /* Как это работает */
+
+position: absolute;
+width: 308px;
+height: 39px;
+left: 657px;
+top: 456px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+color: #ECB0FE;
+white-space:nowrap;
+}
+.square3{
+    /* Rectangle 40 */
+
+position: absolute;
+width: 278px;
+height: 100px;
+left: 206px;
+top: 558px;
+
+background: #FFFFFF;
+border-radius: 75px;
+}
+.viperr3{
+    /* Загрузи мем */
+
+position: absolute;
+width: 226px;
+height: 39px;
+left: 232px;
+top: 588px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+color: #ECB0FE;
+white-space:nowrap;
+}
+.square4{
+    /* Rectangle 42 */
+
+position: absolute;
+width: 278px;
+height: 100px;
+left: 1186px;
+top: 558px;
+
+background: #FFFFFF;
+border-radius: 75px;
+
+}
+.viperr4{
+    /* Результат */
+
+position: absolute;
+width: 180px;
+height: 39px;
+left: 1237px;
+top: 588px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+color: #ECB0FE;
+}
+.square5{
+    /* Group 169 */
+
+position: absolute;
+width: 278px;
+height: 100px;
+left: 678px;
+top: 700px;
+background: #FFFFFF;
+border-radius: 75px;
+
+}
+.viperr5{
+    /* Анализируй */
+
+position: absolute;
+width: 215px;
+height: 39px;
+left: 710px;
+top: 730px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+color: #ECB0FE;
+
+
+}
+.square6{
+    /* Rectangle 31 */
+
+position: absolute;
+width: 1450px;
+height: 287px;
+left: 30px;
+top: 900px;
+
+background: #FFFFFF;
+box-shadow: -3px 7px 32.8px 10px rgba(20, 14, 14, 0.25);
+border-radius: 75px;
+
+}
+.viperr6{
+    /* Загрузите мем */
+
+position: absolute;
+width: 1000px;
+height: 39px;
+left: 89px;
+top: 963px;
+border: none;
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+outline: none;
+white-space:nowrap;
+}
+.circle{
+    /* Ellipse 18 */
+
+position: absolute;
+width: 81px;
+height: 81px;
+left: 89px;
+top: 1074px;
+
+background: #FFFFFF;
+opacity: 0.7;
+box-shadow: -3px 7px 28.2px rgba(0, 0, 0, 0.25);
+border-radius: 50%;
+}
+.Vector{
+/* Vector */
+border-radius: 30px;
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+position: absolute;
+margin-top: 868px;
+margin-left: 110px;
+margin-top: 843PX ;
+border: none;
+font-size: 20px;
+}
+.square7{
+    /* Rectangle 33 */
+
+position: absolute;
+width: 154px;
+height: 66px;
+left: 210px;
+margin-top: 825PX;
+
+background: #FFFFFF;
+box-shadow: -3px 7px 28.2px rgba(0, 0, 0, 0.25);
+border-radius: 75px;
+
+}
+.Vector2{
+    /* Vector */
+
+    border-radius: 30px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    margin-top: 868px;
+    margin-left: 900px;
+    margin-top: 843PX ;
+    border: none;
+font-size: 20px;
+}
+.viperr7{
+    /* Поиск */
+
+position: absolute;
+width: 81px;
+height: 29px;
+left: 260px;
+top: 1100px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+color: #D5D5D5;
+
+
+}
+.square8{
+    /* Rectangle 35 */
+
+position: absolute;
+width: 242px;
+height: 66px;
+left: 420px;
+margin-top: 825PX;
+
+background: #FFFFFF;
+box-shadow: -3px 7px 28.2px rgba(0, 0, 0, 0.25);
+border-radius: 75px;
+
+}
+.Vector3{
+    
+/* icon-park-outline:analysis */
+
+position: absolute;
+width: 38px;
+height: 38px;
+left: 435px;
+margin-top: 838px;;
+
+
+
+
+}
+.viperr8{
+    /* Анализируй */
+
+position: absolute;
+width: 160px;
+height: 29px;
+left: 481px;
+margin-top: 843px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.05em;
+
+color: #D5D5D5;
+
+
+}
+::-webkit-scrollbar {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+  }
+
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #f2bf93;
+    background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
+                      transparent 25%,
+                      transparent 50%,
+                      rgba(255, 255, 255, .25) 50%,
+                      rgba(255, 255, 255, .25) 75%,
+                      transparent 75%,
+                      transparent);
+  }

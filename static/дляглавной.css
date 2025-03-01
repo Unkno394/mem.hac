@@ -1,0 +1,709 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    
+
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  body {
+    max-width: 1519px;
+  }
+  ol, ul {
+    list-style: none;
+  }
+.body{
+    background: linear-gradient(to right, #B0C8F9, #E594FE);
+        font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+}
+.header{
+    display: flex;
+}
+.logo{
+    margin-left: 9px;
+    margin-top: 18px;
+}
+.name{
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffff;
+    font-size: 110px;
+    margin-left: 52px;
+    margin-top: 80px;
+}
+.button{
+    margin-left: 377px;
+    margin-top: 110px;
+    width: 222px;
+    height: 67px;
+    background-color: #7CEA5D;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 36px;
+    color: #ffff;
+    font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        cursor:pointer;
+}
+.smail{
+    margin-top: 228px;
+    margin-left: 102px;
+    position:static;
+}
+.secret{
+    margin-top: 40px;
+    font-size: 48px;
+    color: #ffff;
+}
+.mem{
+    font-size: 36px;
+    color: #ffff;
+}
+.button2{
+    margin-top: 86px;
+    width: 278px;
+    height: 103px;
+    background-color: #f3f3f3;
+    color: #7CEA5D;
+    font-size: 24px;
+    border-radius: 50px;
+    border-style: none;
+    font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        cursor: pointer;
+}
+.box-container{
+    position: absolute;
+    width: 1296px;
+    height: 372px;
+    background:linear-gradient(to right, #FCE393, #7CEA5D);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: -60px;
+margin-left: 102px;
+
+}
+.white-box{
+    width: 1296px;
+    height: 6457px;
+    background-color: #ececec;
+    border-radius: 60px;
+    margin-top: 260px;
+margin-left: 102px;
+position:static;
+}
+.cicrle{
+position: absolute;
+width: 148px;
+height: 148px;
+left: 161px;
+top: 1734px;
+border-radius: 50%;
+background: linear-gradient(#B0C8F9, #E594FE);
+}
+
+.homeincicrle{
+position: absolute;
+width: 112px;
+height: 112px;
+left: 178px;
+top: 1752px;
+}
+.Главная{
+    /* Главная */
+
+position: absolute;
+width: 128px;
+height: 29px;
+left: 178px;
+top: 1686px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.06em;
+
+color: #000000;
+}
+.cicrle2{
+    /* Ellipse 13 */
+
+position: absolute;
+width: 148px;
+height: 148px;
+left: 357px;
+top: 1734px;
+border-radius: 50%;
+background: #B0C8F9;
+transition: color 1s ease;
+cursor: pointer;
+}
+.cicrle2:hover {
+    background-color: #C96CE6 ;
+}
+.fire{
+/* mdi:fire */
+pointer-events: none;
+position: absolute;
+width: 121px;
+height: 121px;
+left: 371px;
+top: 1745px;
+transition: color 1s ease;
+cursor: pointer;
+}
+.Популярные{
+    /* Популярные */
+
+position: absolute;
+width: 200px;
+height: 29px;
+left: 331px;
+top: 1686px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #000000;
+}
+.мемы{
+ /* мемы */
+
+position: absolute;
+width: 92px;
+height: 29px;
+left: 385px;
+top: 1892px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #000000;
+}
+.cicrle3{
+    /* Ellipse 14 */
+
+position: absolute;
+width: 148px;
+height: 148px;
+left: 553px;
+top: 1734px;
+border-radius: 50%;
+background: #B0C8F9;
+transition: color 1s ease;
+cursor: pointer;
+}
+.cicrle3:hover {
+    background-color: #C96CE6 ;
+}
+.cub{
+ /* Vector */
+
+/* Vector */
+pointer-events: none;
+position: absolute;
+width: 98px;
+height: 114px;
+left: 579px;
+top: 1748px;
+ 
+}
+.Случайный{
+    /* Случайный */
+
+position: absolute;
+width: 180px;
+height: 29px;
+left: 544px;
+top: 1686px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #000000;
+}
+.мем{
+    /* мем */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: 596px;
+top: 1892px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.06em;
+color: #000000;
+}
+.cicrle4{
+    /* Ellipse 15 */
+
+position: absolute;
+width: 148px;
+height: 148px;
+left: 749px;
+top: 1734px;
+border-radius: 50%;
+background: #B0C8F9;
+transition: color 1s ease;
+cursor: pointer;
+}
+.cicrle4:hover {
+    background-color: #C96CE6 ;
+}
+.ярлык{
+    /* solar:tag-bold */
+    pointer-events: none;
+position: absolute;
+width: 112px;
+height: 112px;
+left: 767px;
+top: 1749px;
+}
+.Категории{
+    /* Категории */
+
+position: absolute;
+width: 158px;
+height: 29px;
+left: 744px;
+top: 1686px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #000000;
+}
+.мемов{
+    /* мемов */
+
+position: absolute;
+width: 106px;
+height: 29px;
+left: 770px;
+top: 1892px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.06em;
+
+color: #000000;
+}
+.cicrle5{
+    /* Ellipse 16 */
+
+position: absolute;
+width: 148px;
+height: 148px;
+left: 935px;
+top: 1734px;
+border-radius: 50%;
+background: #B0C8F9;
+transition: color 1s ease;
+cursor: pointer;
+}
+.cicrle5:hover {
+    background-color: #C96CE6 ;
+}
+.cup{
+   /* gridicons:trophy */
+   pointer-events: none;
+position: absolute;
+width: 111px;
+height: 111px;
+left: 954px;
+top: 1750px; 
+}
+.Топ{
+    /* Топ */
+
+position: absolute;
+width: 53px;
+height: 29px;
+left: 983px;
+top: 1686px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.06em;
+
+color: #000000;
+}
+.мемов1{
+  /* мемов */
+
+position: absolute;
+width: 90px;
+height: 29px;
+left: 968px;
+top: 1892px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.06em;
+
+color: #000000;  
+}
+.cicrle6{
+    /* Ellipse 17 */
+
+position: absolute;
+width: 148px;
+height: 148px;
+left: 1131px;
+top: 1731px;
+border-radius: 50%;
+background: #B0C8F9;
+cursor: pointer;
+}
+.cicrle6:hover {
+    background-color: #C96CE6 ;
+}
+.lupa{
+ /* entypo:magnifying-glass */
+ pointer-events: none;
+position: absolute;
+width: 112px;
+height: 112px;
+left: 1149px;
+top: 1745px;   
+}
+.Анализ{
+  /* Анализ */
+
+position: absolute;
+width: 105px;
+height: 29px;
+left: 1153px;
+top: 1686px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.06em;
+
+color: #000000;  
+}
+.мемов2{
+/* мемов */
+
+position: absolute;
+width: 89px;
+height: 29px;
+left: 1167px;
+top: 1892px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+letter-spacing: 0.06em;
+
+color: #000000;
+}
+.квадрат{
+    /* Rectangle 26 */
+
+position: absolute;
+width: 1146px;
+height: 1302px;
+left: 178px;
+top: 2120px;
+
+background: #D9D9D9;
+border-radius: 20px;
+}
+.квадрат2{
+/* Rectangle 27 */
+
+position: absolute;
+width: 1146px;
+height: 1302px;
+left: 178px;
+top: 3607px;
+
+background: #D9D9D9;
+border-radius: 20px;
+}
+.квадрат3{
+    left: 178px;
+    /* Rectangle 28 */
+
+position: absolute;
+width: 1146px;
+height: 1302px;
+top: 5094px;
+
+background: #D9D9D9;
+border-radius: 20px;
+
+}
+.квадрат4{
+    left: 178px;
+    /* Rectangle 29 */
+
+position: absolute;
+width: 1146px;
+height: 1302px;
+top: 6581px;
+
+background: #D9D9D9;
+border-radius: 20px;
+}
+.footer{
+    background:linear-gradient(to right, #FCE393, #7CEA5D);
+position: absolute;
+width: 1519px;
+height: 418px;
+top: 8262px;
+}
+.logomi{
+    /* Vector */
+
+position: absolute;
+margin-left: 16px;
+margin-top: 289px;
+}
+.namemi{
+    /* MemeLytics */
+
+position: absolute;
+width: 293px;
+height: 56px;
+left: 153px;
+top: 8313.94px;
+
+font-family: 'Jersey 15';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 64px;
+
+color: #FFFFFF;
+}
+.сведения{
+    /* Сведения об образовательной организации */
+
+position: absolute;
+width: 658px;
+height: 70px;
+left: 761.17px;
+top: 8314px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+/* Белый */
+color: #FFFFFF;
+}
+.контакты{
+    /* Контакты */
+
+position: absolute;
+width: 142.43px;
+height: 34.29px;
+left: 739px;
+top: 8397px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+/* Белый */
+color: #FFFFFF;
+}
+.a{
+    /* +7 952 604 24 24 */
+
+position: absolute;
+width: 271.51px;
+height: 43.93px;
+left: 901px;
+top: 8397px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+/* Белый */
+color: #FFFFFF;
+}
+.b{
+    /* +7 918 531 8146 */
+
+position: absolute;
+width: 255.19px;
+height: 40.71px;
+left: 901px;
+top: 8452px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+/* Белый */
+color: #FFFFFF;
+}
+.c{
+    /* +7 951 502 9322 */
+
+position: absolute;
+width: 206px;
+height: 29px;
+left: 1162.17px;
+top: 8397px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+}
+.d{
+    /* +7 904 448 0008 */
+
+position: absolute;
+width: 224px;
+height: 29px;
+left: 1162.17px;
+top: 8452px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+}
+.line{
+    /* Vector 1 */
+
+position: absolute;
+width: 1192px;
+height: 0px;
+left: calc(50% - 1192px/2 + 19px);
+top: 8577px;
+
+/* Подводка */
+border: 19px solid #E6E6E6;
+}
+::-webkit-scrollbar {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+  }
+
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #f2bf93;
+    background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
+                      transparent 25%,
+                      transparent 50%,
+                      rgba(255, 255, 255, .25) 50%,
+                      rgba(255, 255, 255, .25) 75%,
+                      transparent 75%,
+                      transparent);
+  }
+  .первый{
+    margin-top: 250px;
+    width: 100%;
+    height: 700px;
+  }
+  .второй{
+    width: 100%;
+    margin-top: 250px;
+    height: 700px;
+  }
+  .третий{
+    width: 100%;
+    margin-top: 250px;
+    height: 700px;
+  }
+  .четвертый{
+    width: 100%;
+    margin-top: 250px;
+    height: 700px;
+  }
