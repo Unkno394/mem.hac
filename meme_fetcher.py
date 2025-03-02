@@ -5,55 +5,113 @@ import random
 import numpy as np
 import pytesseract
 from flask import Flask, jsonify, render_template, request
-from tensorflow.keras.applications import ResNet50
+from tensorflow.keras.applications.efficientnet import EfficientNetB3, preprocess_input, decode_predictions
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
 from textblob import TextBlob
-from PIL import Image
+from PIL import Image as PILImage
+import torch
+import open_clip
+import easyocr
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+from transformers import BlipProcessor, BlipForConditionalGeneration
+
 
 # Инициализация Flask
 app = Flask(__name__)
 
-# Загрузка модели ResNet50 для анализа изображений
-model_resnet = ResNet50(weights='imagenet')
+# Инициализация анализатора настроений
+analyzer = SentimentIntensityAnalyzer()
+
+# Загрузка модели EfficientNetB3 для анализа изображений
+model_resnet = EfficientNetB3(weights='imagenet')
+
+# Инициализация EasyOCR для извлечения текста
+reader = easyocr.Reader(["ru", "en"])  # Поддержка русского и английского
+
+# Загрузка модели BLIP для генерации описания изображений
+processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
+blip_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
+
+# Словарь для перевода английских меток на русский
+label_translation = {
+    "dog": "собака",
+    "cat": "кошка",
+    "car": "автомобиль",
+    "apple": "яблоко",
+    "banana": "банан",
+    "person": "человек",
+    "tree": "дерево",
+    "house": "дом",
+    "bird": "птица",
+    "computer": "компьютер",
+    "chair": "стул",
+    "table": "стол",
+    "phone": "телефон",
+    "book": "книга",
+    "cup": "чашка",
+    # Добавьте другие метки по необходимости
+}
+
+# Функция для извлечения текста с изображения
+def extract_text(image_path):
+    result = reader.readtext(image_path, detail=0)
+    return " ".join(result)
+
+# Функция для анализа настроений из извлечённого текста
+def analyze_mood_from_text(text):
+    scores = analyzer.polarity_scores(text)
+    if scores["compound"] > 0.05:
+        return "Позитивное настроение"
+    elif scores["compound"] < -0.05:
+        return "Негативное настроение"
+    else:
+        return "Нейтральное настроение"
+
+# Функция для перевода меток на русский
+def translate_label(label):
+    return label_translation.get(label, label)  # Возвращаем перевод или оригинальную метку, если перевода нет
+
+# Функция для генерации описания изображения
+def generate_image_description(image_path):
+    # Открываем изображение
+    raw_image = PILImage.open(image_path).convert("RGB")
+
+    # Подготавливаем изображение для модели BLIP
+    inputs = processor(raw_image, return_tensors="pt")
+
+    # Генерируем описание
+    out = blip_model.generate(**inputs)
+    description = processor.decode(out[0], skip_special_tokens=True)
+    return description
 
 # Функция для прогнозирования объектов на изображении
 def predict_image(image_path):
-    # Загружаем изображение
-    img = image.load_img(image_path, target_size=(224, 224))
+    # Загружаем изображение с нужным размером 300x300
+    img = image.load_img(image_path, target_size=(300, 300))  # Используем размер 300x300
     img_array = image.img_to_array(img)
-    img_array = np.expand_dims(img_array, axis=0)
-    img_array = preprocess_input(img_array)
+    img_array = np.expand_dims(img_array, axis=0)  # Добавляем размерность для пакета
+    img_array = preprocess_input(img_array)  # Применяем предобработку для EfficientNetB3
 
-    # Прогнозируем с использованием модели ResNet50
+    # Прогнозируем с использованием модели EfficientNetB3
     predictions = model_resnet.predict(img_array)
     decoded_predictions = decode_predictions(predictions, top=3)[0]
 
     # Извлекаем метку и уверенность прогноза
-    label = decoded_predictions[0][1]  # Название объекта
+    label = decoded_predictions[0][1]  # Название объекта на английском
     confidence = decoded_predictions[0][2]  # Уверенность
 
+    # Переводим метку на русский
+    translated_label = translate_label(label)
+
     # Извлекаем текст с изображения с помощью pytesseract
-    extracted_text = pytesseract.image_to_string(img)
+    extracted_text = pytesseract.image_to_string(img, lang='rus')
     mood = analyze_mood_from_text(extracted_text)
 
-    return label, confidence, extracted_text, mood
+    # Генерируем описание изображения
+    description = generate_image_description(image_path)
 
-# Функция для анализа настроений из извлечённого текста
-def analyze_mood_from_text(text):
-    # Простой анализ настроений с использованием TextBlob
-    if text.strip() == "":
-        return "Не найдено текста на изображении"
-    
-    blob = TextBlob(text)
-    sentiment = blob.sentiment.polarity  # Сентиментальный показатель (-1 до 1)
-
-    if sentiment > 0:
-        return "Позитивное настроение"
-    elif sentiment < 0:
-        return "Негативное настроение"
-    else:
-        return "Нейтральное настроение"
+    return translated_label, confidence, extracted_text, mood, description
 
 # Страница для загрузки изображений и анализа
 @app.route('/analyse', methods=['GET', 'POST'])
@@ -73,18 +131,21 @@ def analyse():
             file.save(file_path)
 
             # Прогнозируем содержимое изображения
-            label, confidence, extracted_text, mood = predict_image(file_path)
+            label, confidence, extracted_text, mood, description = predict_image(file_path)
 
             return render_template('index.html', 
                                    label=label, 
                                    confidence=confidence, 
                                    extracted_text=extracted_text, 
                                    mood=mood, 
+                                   description=description,  # Добавляем описание
                                    image_url=file_path)
         else:
             return "Нет изображения для анализа", 400
 
-    return render_template('index.html', label=None, confidence=None, extracted_text=None, mood=None)
+    return render_template('index.html', label=None, confidence=None, extracted_text=None, mood=None, description=None)
+
+
 
 # Настроим Reddit API
 reddit = praw.Reddit(
