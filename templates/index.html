@@ -40,14 +40,14 @@
         
 
         {% if label %}
-    <h2>Результат анализа:</h2>
-    <p>Метка: {{ label }}</p>
-    <p>Уверенность: {{ confidence }}%</p>
-    <img src="{{ image_url }}" alt="Загруженное изображение">
-{% endif %}
+        <div class="qqq"> </div>
+    <h2 class="chek">Результат анализа:</h2>
+    <p class="pp">Изображено: {{ label }}</p>
+    <p class="des">Описание: {{ description }}</p> <!-- Добавляем описание -->
+    <p class="ss">Уверенность: {{ confidence }}%</p>
+    <p class="mood">Настроение: {{ mood }}</p> <!-- Выводим настроение -->
+
+    {% endif %}
+
     </main>
     <footer>
-
-    </footer>
-</body>
-</html>
