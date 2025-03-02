@@ -398,3 +398,105 @@ color: #D5D5D5;
                       transparent 75%,
                       transparent);
   }
+  .chek{
+position: absolute;
+width: 480px;
+height: 58px;
+left: 525px;
+top: 1336px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+
+text-align: center;
+
+color: #000000;
+
+
+  }
+  .pp{
+position: absolute;
+width: 394px;
+height: 96px;
+left: 568px;
+top: 1538px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+
+color: #000000;
+
+
+  }
+  .ss{
+position: absolute;
+width: 613px;
+height: 231px;
+left: 459px;
+top: 1694px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+
+color: #000000;
+
+
+  }
+  .des{
+position: absolute;
+width: 559px;
+height: 48px;
+left: 486px;
+top: 1853px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+
+color: #000000;
+
+
+  }
+  .mood{
+
+position: absolute;
+width: 792px;
+height: 48px;
+left: 369px;
+top: 2110px;
+
+font-family: 'Russo One';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+
+color: #000000;
+  }
+  .qqq{
+    box-shadow: -3px 7px 28.2px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    width: 822px;
+    height: 1094px;
+    left: 354px;
+    top: 1278px;
+    
+    background: #ffff;
+    border-radius: 49px;
+      }
+  
